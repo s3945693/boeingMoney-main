@@ -100,21 +100,21 @@
     float: left;
     width: 50%;
     padding: 5px;
-    background: rgb(14, 167, 249);
+    background: rgb(72, 72, 72);
     color: white;
  }
  .left-div-small {
     float: left;
     width: 30%;
     padding: 5px;
-    background: rgb(14, 167, 249);
+    background: rgb(72, 72, 72);
     color: white;
  }
  .right-div-big {
     float: left;
     width: 70%;
     padding: 5px;
-    background: rgb(14, 167, 249);
+    background: rgb(72, 72, 72);
     color: white;
  }
  
@@ -122,7 +122,7 @@
     float: right;
     width: 50%;
     padding: 5px;
-    background: rgb(13, 138, 206);
+    background: rgb(72, 72, 72);
     color: white;
  }
  
@@ -130,26 +130,26 @@
     float: right;
     width: 50%;
     padding: 5px;
-    background: rgb(14, 167, 249);
+    background: rgb(72, 72, 72);
     color: white;
  }
  
  .firstOFThree {
     float: left;
     width: 33%;
-    background: rgb(14, 167, 249);
+    background: rgb(72, 72, 72);
     color: white;
  }
  .secondOfThree{
     float: right;
     width: 33%;
-    background: rgb(14, 167, 249);
+    background: rgb(72, 72, 72);
     color: white;
  }
  .thirdOfThree{
     display: inline-block;
     width: 33%;
-    background: rgb(14, 167, 249);
+    background: rgb(72, 72, 72);
     color: white;
  }
  
