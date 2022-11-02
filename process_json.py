@@ -12,7 +12,7 @@ part_info_df = pd.DataFrame()
 run_details_df = pd.DataFrame()
 first_run = True
 
-
+# creates two tables as dataframes. 
 for file in fileList:
     f = open(file)
     data = json.loads(f.read())
@@ -28,11 +28,16 @@ for file in fileList:
         run_details_df = run_details_df_temp.copy()
         first_run = False
     else:
-        part_info_df = part_info_df.append(part_info_df_temp, ignore_index=True)
-        run_details_df = run_details_df.append(run_details_df_temp, ignore_index=True)
+        #part_info_df = part_info_df.append(part_info_df_temp, ignore_index=True)
+        #run_details_df = run_details_df.append(run_details_df_temp, ignore_index=True)
+        part_info_df = pd.concat([part_info_df, part_info_df_temp], axis=0)
+        run_details_df = pd.concat([run_details_df, run_details_df_temp], axis=0)
 
+run_details_df.reset_index(inplace=True)
+part_info_df.reset_index(inplace=True)
 
-#temp = pd.concat(df, ignore_index=True)
-print(run_details_df)
+run_details_df.to_json(r'OutputJSON\run_details.json')
+part_info_df.to_json(r'OutputJSON\part_info.json')
+
 
 
