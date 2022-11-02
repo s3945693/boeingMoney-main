@@ -17,6 +17,7 @@ for file in fileList:
     data = json.loads(f.read())
 
     part_info_df = pd.json_normalize(data['PartInformation'], meta=data['RunDetails'])
+    #should do data[PartInformation][PartNumber]
     part_info_df['load_no'] = data['PartInformation']
 
     df.append(part_info_df)
