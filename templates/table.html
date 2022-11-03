@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block title %}
+Generate Tables
+{% endblock %}
+{% block content %}
+<div class = 'header'>
+    <h1> Data Generation </h1>
+    <p>Values can be left blank</p>
+</div>
+<div class = 'container'>
+    <div class = 'center-div'>
+        <div class = 'left-div'>
+            <center>
+                <label for='gender'><h3>Load Number:</h3></label>
+                <input type="text" id="gender" name="gender"> </center>
+        </div>
+        <div class = 'right-div'>
+            <center>
+                <label for='gender'><h3>Equipment:</h3></label>
+                <input type="text" id="gender" name="gender"> </center>
+        </div>
+    </div>
+
+    <div class = 'center-div'>
+        <div class = 'left-div'>
+            <center>
+                <label for='gender'><h3>Run Recipe:</h3></label>
+                <input type="text" id="gender" name="gender"> </center>
+        </div>
+        <div class = 'right-div'>
+            <center>
+                <label for='gender'><h3>Operator Name:</h3></label>
+                <input type="text" id="gender" name="gender"> </center>
+        </div>
+    </div>
+
+    <div class = 'center-div'>
+        <div class = 'left-div'>
+            <center>
+                <label for='gender'><h3>Run Start:</h3></label>
+                <input type="text" id="gender" name="gender"> </center>
+        </div>
+        <div class = 'right-div'>
+            <center>
+                <label for='gender'><h3>Run Duration:</h3></label>
+                <input type="text" id="gender" name="gender">   
+                to 
+                <input type="text" id="gender" name="gender">   
+            </center>
+        </div>
+    </div>
+
+    <div class = 'center-div'>
+        <form method="post" action="/">
+            <input type="submit" value="VALUE1" name="action1"/>
+            <input type="submit" value="VALUE2" name="action2" />
+        </form>
+    </div>
+
+</div>
+{% endblock %}
