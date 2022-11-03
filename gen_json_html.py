@@ -5,5 +5,5 @@ file = "C:/Users/frede/OneDrive/Desktop/University/Hackathon/boeingMoney-main/js
 
 f = open(file)
 data = json.loads(f.read())
-part_info_df_temp = pd.json_normalize(data['PartInformation'])
-part_info_df_temp.to_html(r'templates\display_json.html')
+part_info_df_temp = pd.json_normalize(data['RunDetails'])
+part_info_df_temp.to_html(r'templates\display_json_details.html')

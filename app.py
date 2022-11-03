@@ -38,3 +38,6 @@ def getqueried():
 def getHome():
     return render_template("homes.html")
     
+@app.route("/cure_report")
+def show_json():
+    return render_template("display_json.html")
