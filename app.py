@@ -26,6 +26,8 @@ def get_data():
 @app.route("/table")
 def gettable():
     return render_template("table.html")
+    #if request.method == 'POST':return getqueried()
+
 
 @app.route("/queried")
 def getqueried():
