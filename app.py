@@ -33,4 +33,8 @@ def gettable():
 def getqueried():
     return render_template("queried.html")
         #data=app.send_static_file("data.json")
+
+@app.route("/home")
+def getHome():
+    return render_template("homes.html")
     
