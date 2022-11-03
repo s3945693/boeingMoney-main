@@ -33,4 +33,7 @@ def gettable():
 def getqueried():
     return render_template("queried.html")
         #data=app.send_static_file("data.json")
-    
+
+@app.route("/cure_report")
+def show_json():
+    return render_template("display_json.html")
