@@ -26,5 +26,9 @@ def get_data():
 @app.route("/table")
 def gettable():
     return render_template("table.html")
+
+@app.route("/queried")
+def getqueried():
+    return render_template("queried.html")
         #data=app.send_static_file("data.json")
     
